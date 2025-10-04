@@ -1,4 +1,4 @@
-# 🍅 Project - Pomo-04
+# 🍅 Pomo-04
 
 A minimalist, highly focused, and persistent Pomodoro Timer application designed to maximize concentration by preventing distractions and screen sleep. Perfect for deep work and study sessions.
 
@@ -61,4 +61,4 @@ To clone and run Pomo-04 locally:
 git clone https://github.com/theatom06/pomo.git
 cd pomo
 ```
-2. Just open `index.html` in your favorite web browser (preferably Chrome or Edge for full API support).
+2. Just open `public/index.html` in your favorite web browser (preferably Chrome or Edge for full API support).
