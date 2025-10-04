@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+body {
+    margin: 0;
+    font-family: "SUSE Mono", monospace;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    /* Added Background Transition */
+    transition: background-color 2s ease-in-out; 
+}
+
+#fullscreen-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid white;
+    background-color: #1a1a1a;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 1000;
+    transition: background-color 0.2s, border-color 0.2s, transform 0.2s;
+}
+
+#fullscreen-btn:hover {
+    background-color: #333;
+    border-color: #eee;
+    transform: scale(1.05);
+}
+
+#labels {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.label {
+    transition: color 0.3s;
+}
+
+.label.active {
+    color: white;
+}
+
+.label.inactive {
+    color: #666;
+}
+
+.label span {
+    display: inline-block;
+    min-width: 30px;
+    text-align: center;
+    outline: none;
+    border-bottom: 1px dashed #666;
+    /* Default border */
+    /* Added transition for contenteditable style */
+    transition: border-bottom 0.3s; 
+}
+
+.label.active span {
+    border-bottom: 1px dashed white;
+    /* Active border */
+}
+
+#timer {
+    font-size: 9rem;
+    text-align: center;
+    outline: none;
+    margin-bottom: 30px;
+}
+
+.controls {
+    display: flex;
+    width: 40%;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon-btn {
+    width: calc(2rem + 30px);
+    height: calc(2rem + 30px);
+    border-radius: 50%;
+    border: 1px solid white;
+    background: #00000000;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 30px;
+    flex-shrink: 0;
+}
+
+.main-btn {
+    flex-grow: 1;
+    font-size: 1.5rem;
+    padding: 15px;
+    border: 1px solid white;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    background-color: #00000000;
+}
+
+.main-btn:hover {
+    transform: scale(1.02);
+    border: 2px solid white;
+}

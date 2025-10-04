@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Study Timer</title>
+  <link rel="stylesheet" href="./style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A simple study timer with break intervals.">
+  <meta name="author" content="theatom06">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+  <audio id="alarmSound" preload="auto" src="https://www.myinstants.com/media/sounds/zapsplat_bell_service_disk_ring_slightly_broken_resonate_18042.mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+  <button id="fullscreen-btn" class="icon-btn"><span class="material-icons">fullscreen</span></button>
+
+  <div id="labels">
+    <div id="studyLabel" class="label active">Study: <span id="studyTime" contenteditable="true">25</span>m</div>
+    <div id="breakLabel" class="label inactive">Break: <span id="breakTime" contenteditable="true">5</span>m</div>
+  </div>
+
+  <div id="timer">25:00</div>
+
+  <div class="controls">
+    <button id="startStop" class="main-btn">Start</button>
+    <button id="reset" class="icon-btn"><span class="material-icons">close</span></button>
+  </div>
+
+  <script src="./script.js" defer></script>
+</body>
+
+</html>
